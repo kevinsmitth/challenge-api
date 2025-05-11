@@ -106,7 +106,7 @@ class UserController extends Controller
         try {
             $query = User::query()
                 ->when(data_get($data, 'search'), static function ($query) use ($data) {
-                    $query->whereLike('name', '%' . data_get($data, 'search', '') . '%');
+                    $query->whereLike('name', '%'.data_get($data, 'search', '').'%');
                 });
 
             $userCount = (clone $query)->count();

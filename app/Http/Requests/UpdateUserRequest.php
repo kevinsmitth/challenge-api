@@ -24,7 +24,7 @@ class UpdateUserRequest extends FormRequest
     {
         return [
             'name' => ['string', 'max:255'],
-            'email' => ['string', 'email', 'max:255', 'unique:users,email,' . $this->route('user')],
+            'email' => ['string', 'email', 'max:255', 'unique:users,email,'.$this->route('user')],
             'password' => ['confirmed', 'min:8', 'max:255'],
             'cpf' => ['string', 'max:255', 'regex:/^\d{3}\.\d{3}\.\d{3}-\d{2}$/'],
             'phone' => ['string', 'max:255', 'regex:/^\(\d{2}\) \d{5}-\d{4}$/'],

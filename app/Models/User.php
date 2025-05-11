@@ -52,11 +52,15 @@ class User extends Authenticatable
 
     public function getPhoneFormattedAttribute(): ?string
     {
-        if (!$this->phone) return null;
+        if (! $this->phone) {
+            return null;
+        }
 
         $digits = preg_replace('/\D/', '', $this->phone);
 
-        if (strlen($digits) !== 11) return $this->phone;
+        if (strlen($digits) !== 11) {
+            return $this->phone;
+        }
 
         return sprintf('(%s) %s-%s',
             substr($digits, 0, 2),

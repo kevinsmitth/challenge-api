@@ -23,7 +23,7 @@ it('can show a user by id', function () {
 });
 
 it('can search users', function () {
-    $this->get(route('users.search', ['search' => 'Test User']))
+    $this->get(route('users.index', ['search' => 'Test User']))
         ->assertSuccessful()
         ->assertJsonCount(1, 'data');
 });
@@ -42,7 +42,7 @@ it('can create a user', function () {
         'name' => 'John Doe',
         'email' => 'T3hYq@example.com',
         'cpf' => '000.000.000-00',
-        'phone' => '(00) 00000-0000',
+        'phone' => '00 00000-0000',
     ]);
 });
 
@@ -61,7 +61,7 @@ it('can update a user by id', function () {
         'name' => 'John Doe',
         'email' => 'T3hYq@example.com',
         'cpf' => '000.000.000-00',
-        'phone' => '(00) 00000-0000',
+        'phone' => '00 00000-0000',
     ]);
 });
 
