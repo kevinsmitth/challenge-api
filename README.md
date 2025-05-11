@@ -70,7 +70,7 @@ Utilize este comando para executar os testes.
 
 ## ✒️ Autores
 
-- **Kevin Smith** - _Desenvolvimento_ - [Kevin Smith](https://github.com/kevinsmitth)
+- **Kevin Smith** - _Desenvolvimento_ - [Kevin Smith](https://www.linkedin.com/in/kevin-smith-130a04154/)
 
 ## 📝 Licença
 
