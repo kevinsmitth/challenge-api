@@ -25,6 +25,14 @@
                 "operationId": "7e2f5799553ec93c9c43e2a58490d447",
                 "parameters": [
                     {
+                        "name": "search",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
                         "name": "page",
                         "in": "query",
                         "required": false,
@@ -433,6 +441,10 @@
                     "phone": {
                         "type": "string",
                         "example": "(00) 00000-0000"
+                    },
+                    "created_at": {
+                        "type": "string",
+                        "example": "2023-01-01 00:00:00"
                     }
                 },
                 "type": "object"

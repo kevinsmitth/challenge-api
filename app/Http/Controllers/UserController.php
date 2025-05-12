@@ -46,6 +46,16 @@ class UserController extends Controller
      *     summary="List of all users",
      *
      *     @OA\Parameter(
+     *          name="search",
+     *          in="query",
+     *          required=false,
+     *
+     *          @OA\Schema(
+     *              type="string"
+     *          )
+     *     ),
+     *
+     *     @OA\Parameter(
      *          name="page",
      *          in="query",
      *          required=false,

@@ -38,8 +38,10 @@ docker compose exec -it laravel.test composer install
 docker compose exec -it laravel.test php artisan key:generate
 ```
 
+Talvez necessite esperar um pouco para rodar o comando abaixo, pois o banco de dados pode não estar pronto.
+
 ```
-docker compose exec -it laravel.test php artisan migrate
+docker compose exec -it laravel.test php artisan migrate --seed
 ```
 
 ```
