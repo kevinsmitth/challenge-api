@@ -31,15 +31,15 @@ docker compose up -d
 ```
 
 ```
-./vendor/bin/sail composer install
+docker compose exec -it laravel.test composer install
 ```
 
 ```
-./vendor/bin/sail artisan key:generate
+docker compose exec -it laravel.test php artisan key:generate
 ```
 
 ```
-./vendor/bin/sail artisan migrate
+docker compose exec -it laravel.test php artisan migrate
 ```
 
 ```
@@ -70,7 +70,9 @@ Utilize este comando para executar os testes.
 
 ## ✒️ Autores
 
-- **Kevin Smith** - _Desenvolvimento_ - [Kevin Smith](https://www.linkedin.com/in/kevin-smith-130a04154/)
+- **Kevin Smith** -
+  _Desenvolvimento_ - <a href="https://www.linkedin.com/in/kevin-smith-130a04154/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+  Linkedin</a>
 
 ## 📝 Licença
 
